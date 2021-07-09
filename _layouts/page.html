@@ -1,11 +1,18 @@
 ---
 layout: default
 ---
-<header>
-  {% include back-link.html %}
-  <h1 class="page-title">{{ page.title }}</h1>
-</header>
-<div class="content">
-  {{ content }}
+<div class="wrapper">
+<div class="page">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  {% include page_divider.html %}
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
 </div>
-{% include back-link.html %}
+</div>
